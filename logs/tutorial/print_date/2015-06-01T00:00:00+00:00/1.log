@@ -1,0 +1,28 @@
+[2021-05-13 01:17:02,165] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: tutorial.print_date 2015-06-01T00:00:00+00:00 [queued]>
+[2021-05-13 01:17:02,174] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: tutorial.print_date 2015-06-01T00:00:00+00:00 [queued]>
+[2021-05-13 01:17:02,174] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-13 01:17:02,174] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2021-05-13 01:17:02,174] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-13 01:17:02,183] {taskinstance.py:1089} INFO - Executing <Task(BashOperator): print_date> on 2015-06-01T00:00:00+00:00
+[2021-05-13 01:17:02,186] {standard_task_runner.py:52} INFO - Started process 24380 to run task
+[2021-05-13 01:17:02,196] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', '2015-06-01T00:00:00+00:00', '--job-id', '3', '--pool', 'default_pool', '--raw', '--subdir', '/Users/baotran/anaconda3/envs/airflow-tutorial/lib/python3.7/site-packages/airflow/example_dags/tutorial.py', '--cfg-path', '/var/folders/j3/z5zmcbt16d1csdxhj0381gjr0000gn/T/tmpx0ft8m90', '--error-file', '/var/folders/j3/z5zmcbt16d1csdxhj0381gjr0000gn/T/tmpmo3upavt']
+[2021-05-13 01:17:02,198] {standard_task_runner.py:77} INFO - Job 3: Subtask print_date
+[2021-05-13 01:17:02,243] {logging_mixin.py:104} INFO - Running <TaskInstance: tutorial.print_date 2015-06-01T00:00:00+00:00 [running]> on host Baos-MacBook-Pro.local
+[2021-05-13 01:17:02,275] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=tutorial
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2015-06-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill__2015-06-01T00:00:00+00:00
+[2021-05-13 01:17:02,276] {bash.py:135} INFO - Tmp dir root location: 
+ /var/folders/j3/z5zmcbt16d1csdxhj0381gjr0000gn/T
+[2021-05-13 01:17:02,278] {bash.py:158} INFO - Running command: date
+[2021-05-13 01:17:02,287] {bash.py:169} INFO - Output:
+[2021-05-13 01:17:02,295] {bash.py:173} INFO - Thu May 13 01:17:02 EDT 2021
+[2021-05-13 01:17:02,296] {bash.py:177} INFO - Command exited with return code 0
+[2021-05-13 01:17:02,319] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=print_date, execution_date=20150601T000000, start_date=20210513T051702, end_date=20210513T051702
+[2021-05-13 01:17:02,341] {taskinstance.py:1246} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-05-13 01:17:02,375] {local_task_job.py:146} INFO - Task exited with return code 0
